@@ -11,7 +11,7 @@ const Coin = ({
   priceChange,
   id,
 }) => {
-  let history = useNavigate();
+  const history = useNavigate();
   return (
     <div className="coinContainer">
       <div className="coinRow">
@@ -29,7 +29,7 @@ const Coin = ({
             <p className="coinVolume">$ {marketCap.toLocaleString()}</p>
             <button
               onClick={() => {
-                history.push(`/CoinPage/${id}`);
+                history(`/CoinPage/${id}`);
               }}
             >
               اطلاعات بیشتر
