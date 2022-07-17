@@ -9,3 +9,37 @@
   align-items: center;
   margin: 10px;
 }
+@media only screen and (max-width: 1033px) {
+  .icon-img {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 746px) {
+  .icon-img {
+    height: 200px;
+  }
+  .main-txt {
+    font-size: 25px;
+  }
+  .strong-txt {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 585px) {
+  .icon-img {
+    height: 200px;
+    width: 350px;
+  }
+  .main-txt {
+    font-size: 16px;
+  }
+  .strong-txt {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .icon-img {
+    height: 170px;
+    width: 300px;
+  }
+}
