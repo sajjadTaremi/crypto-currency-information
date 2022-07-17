@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Coin from "../Pages/Coin";
 import "./Styles/CoinPage.css";
 import { FaSearch } from "react-icons/fa";
+import Header from "../Components/Header/Header";
 
 function Home() {
   const [coins, setCoins] = useState([]);
@@ -34,6 +35,7 @@ function Home() {
 
   return (
     <div className="App">
+      <Header />
       <div className="headerContainer">
         <h2>قیمت لحظه ای بازار</h2>
         <div className="buttonContainer">

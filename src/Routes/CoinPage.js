@@ -10,8 +10,10 @@ function CoinPage() {
   const [coin, setCoin] = useState(null);
 
   useEffect(() => {
+    console.log(id);
     Axios.get(`https://api.coingecko.com/api/v3/coins/${id}`).then(
       (response) => {
+        console.log(response.data);
         setCoin(response.data);
       }
     );
@@ -67,7 +69,7 @@ function CoinPage() {
             </div>
           </div>
           <Link to="/">
-            <div className="coinPage-RouteButton">Go back</div>
+            <div className="coinPage-RouteButton">بازگشت</div>
           </Link>
         </div>
       </div>

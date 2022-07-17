@@ -1,0 +1,11 @@
+.main-txt {
+  margin-top: 20px;
+}
+.main,
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
