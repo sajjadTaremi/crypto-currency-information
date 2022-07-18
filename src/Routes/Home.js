@@ -47,7 +47,7 @@ function Home() {
       </div>
       <div className="coinContainer">
         {isLoading && <h1 className="loadingMssg">....کمی صبر کنید</h1>}
-        {filterCoins.splice(0, 10).map((coins) => {
+        {filterCoins.splice(0, 6).map((coins) => {
           return (
             <Coin
               id={coins.id}

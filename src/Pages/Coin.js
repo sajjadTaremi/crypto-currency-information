@@ -20,14 +20,15 @@ const Coin = ({
             <img src={icon} alt="" />
             <h1 className="coinName">{coinName}</h1>
             <p className="coinSymbol">{coinSymbol}</p>
-            <p className="coinPrice">$ {price.toFixed(2)}</p>
+            <p className="coinPrice"> {price.toFixed(2)}$</p>
             {priceChange < 0 ? (
               <p className="priceChange red">{priceChange.toFixed(2)}%</p>
             ) : (
               <p className="priceChange green">{priceChange.toFixed(2)}%</p>
             )}
-            <p className="coinVolume">$ {marketCap.toLocaleString()}</p>
+            <p className="coinVolume"> {marketCap.toLocaleString()}$</p>
             <button
+              className="info-btn"
               onClick={() => {
                 history(`/CoinPage/${id}`);
               }}
