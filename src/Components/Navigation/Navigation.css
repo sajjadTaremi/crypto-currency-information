@@ -1,5 +1,5 @@
 .navbar {
-  background: #e3e3e3;
+  background: #f3ba2f;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -28,26 +28,29 @@
   justify-content: end;
   border-bottom-left-radius: 8px;
 }
-
+.nav-menu a {
+  text-align: center;
+}
 .nav-links {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  color: #00092c;
+  color: #262930;
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
 
 .nav-links:hover {
-  background-color: #f36364;
-  border-radius: 4px;
-  transition: all 0.2s ease-out;
+  background-color: #1e3a8a;
+  color: #e3e3e3;
+  border-radius: 12px;
+  transition: background 0.2s ease-out;
 }
 
 .fa-bars {
   display: flex;
   margin-top: 0.5rem;
-  color: #00092c;
+  color: #262930;
 }
 
 .nav-links-mobile {
@@ -66,10 +69,10 @@
   .nav-menu {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     width: 60%;
     font-size: 1rem;
     position: absolute;
-    top: 80px;
     right: -100%;
     opacity: 1;
     transition: all 0.3s ease;
@@ -80,7 +83,9 @@
   }
 
   .nav-menu.active {
-    background: #e3e3e3;
+    height: 100vh;
+    background: #f3bb2fea;
+    top: 75px;
     right: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -94,13 +99,15 @@
     justify-content: right;
     padding: 1.5rem;
     width: 100%;
-    border-bottom: 1px solid #f363633b;
+    border-bottom: 1px solid #5c10103b;
     text-align: justify;
     align-items: center;
+    font-weight: 600;
+    font-size: 14px;
   }
 
   .nav-links:hover {
-    background-color: #f3636379;
+    background-color: #1e3b8a9f;
     border-radius: 0;
   }
 
@@ -132,22 +139,22 @@
   .nav-links-mobile {
     display: block;
     text-align: center;
-    padding: 1rem 1.5rem;
+    padding: 0.6rem 1.2rem;
     margin: 1.5rem auto;
     margin-bottom: 0;
     border-radius: 8px;
     width: 80%;
     background: #f36364;
     text-decoration: none;
-    color: #202020;
-    font-size: 1.2rem;
+    color: #262930;
+    font-size: 1rem;
     font-weight: 500;
     box-sizing: border-box;
   }
 
   .nav-links-mobile:hover {
-    background: #401ff7ab;
-    color: azure;
+    background: #262930;
+    color: #e3e3e3;
     transition: 250ms;
   }
   .ccc i {
@@ -155,13 +162,17 @@
   }
 }
 
-.ccc i {
-  padding-left: 5px;
-  color: #4b5563;
-  font-size: 20px;
-}
 @media only screen and (max-width: 585px) {
   .navbar-logo {
     font-size: 1.2rem;
   }
+}
+
+.ccc i {
+  padding-left: 5px;
+  color: #262930;
+  font-size: 20px;
+}
+.ccc i:hover {
+  color: #e3e3e3;
 }

@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  text-align: right;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgb(240, 184, 0);
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.footer-flex {
+  display: flex;
+}
+.footer-item {
+  display: flex;
+  margin-top: 0.4rem;
+}
+.footer-link {
+  font-size: 25px;
+  padding-left: 1rem;
+  cursor: pointer;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.img-footer {
+  width: 120px;
+  height: auto;
+}
+.img-footer img {
+  width: 120px;
+  height: auto;
+}

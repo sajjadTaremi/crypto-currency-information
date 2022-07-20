@@ -8,7 +8,7 @@ const menuItems = [
     icon: <AiOutlineHome />,
   },
   {
-    title: "سبد خرید",
+    title: "وبلاگ",
     url: "cart",
     cName: "nav-links",
     // icon: <AiOutlineHome />,
