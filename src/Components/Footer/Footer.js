@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import FooterItem from "./FooterItem";
 import "./Footer.css";
 import imgFooter from "../../Images/Binance-Logo.wine.png";
-
+import imgCoinbace from "../../Images/Coinbase-logo.png";
 const Footer = () => (
   <footer className="footer">
     <div className="footer-flex">
@@ -14,7 +14,7 @@ const Footer = () => (
             return (
               <li key={index}>
                 <NavLink to={item.url} className={item.cName}>
-                  <span className="">
+                  <span className="social-list">
                     <i>{item.icon}</i>
                   </span>
                   {item.title}
@@ -24,8 +24,13 @@ const Footer = () => (
           })}
         </ul>
       </div>
-      <div className="img-footer">
-        <img src={imgFooter} alt=""></img>
+      <div className="img-footer-box">
+        <div className="img-footer">
+          <img src={imgFooter} alt=""></img>
+        </div>
+        <div className="img-footer">
+          <img src={imgCoinbace} alt=""></img>
+        </div>
       </div>
     </div>
   </footer>

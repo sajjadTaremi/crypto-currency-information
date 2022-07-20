@@ -1,4 +1,4 @@
-import { AiOutlineHome } from "react-icons/ai";
+import { AiOutlineHome, AiOutlineSliders, AiOutlineFund } from "react-icons/ai";
 import { BiPhoneIncoming } from "react-icons/bi";
 const menuItems = [
   {
@@ -11,13 +11,13 @@ const menuItems = [
     title: "وبلاگ",
     url: "cart",
     cName: "nav-links",
-    // icon: <AiOutlineHome />,
+    icon: <AiOutlineFund />,
   },
   {
-    title: "محصولات",
+    title: "تحلیل ها",
     url: "product",
     cName: "nav-links",
-    // icon: <AiOutlineHome />,
+    icon: <AiOutlineSliders />,
   },
   {
     title: "تماس با من",
