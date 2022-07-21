@@ -38,26 +38,50 @@ function Home() {
       <Header />
       <div className="headerContainer">
         <h2>قیمت لحظه ای بازار</h2>
-        <div className="buttonContainer">
+        {/* <div className="buttonContainer">
           <input placeholder="جستجو..." type="text" onChange={handleSearch} />
-          <h3 onClick={refreshPage} className="search-icon">
+          <h3 className="search-icon">
             <FaSearch />
           </h3>
-        </div>
+        </div> */}
       </div>
-      <div className="coinContainer">
+        <div className="coinContainer">
+          <div className="coinContainer-Header">
+            <div>
+              <div className="coinContainer-Header_list">
+                <button className="coinContainer-Header_btn">اصلی</button>
+                <button className="coinContainer-Header_btn">
+                  مثبت ترین ها
+                </button>
+                <button className="coinContainer-Header_btn">
+                  منفی ترین ها
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="buttonContainer">
+            <input placeholder="جستجو..." type="text" onChange={handleSearch} />
+            <h3 className="search-icon">
+              <FaSearch />
+            </h3>
+          </div>
+        <div>
+          <div className="coinCutter"></div>
+        </div>
         {isLoading && <h1 className="loadingMssg">....کمی صبر کنید</h1>}
         {filterCoins.splice(0, 6).map((coins) => {
           return (
-            <Coin
-              id={coins.id}
-              icon={coins.image}
-              coinName={coins.name}
-              coinSymbol={coins.symbol}
-              price={coins.current_price}
-              marketCap={coins.market_cap}
-              priceChange={coins.price_change_percentage_24h}
-            />
+            <div>
+              <Coin
+                id={coins.id}
+                icon={coins.image}
+                coinName={coins.name}
+                coinSymbol={coins.symbol}
+                price={coins.current_price}
+                marketCap={coins.market_cap}
+                priceChange={coins.price_change_percentage_24h}
+              />
+            </div>
           );
         })}
       </div>

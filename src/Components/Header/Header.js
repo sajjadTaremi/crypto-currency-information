@@ -1,11 +1,11 @@
 import "../Header/Header.css";
-import Backgroundimg from "../../Images/6238016.png";
+import Backgroundimg from "../../Images/Crypto-Header.png";
 const Header = () => {
   return (
     <div>
-      <div className="icon">
+      <div className="Header">
         <img
-          className="icon-img"
+          className="Header-img"
           src={Backgroundimg}
           height="400px"
           alt="سایت اطلاعات ارزهای دیجیتال"

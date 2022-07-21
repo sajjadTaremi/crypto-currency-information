@@ -9,7 +9,38 @@
   background: #fafafa;
   margin-top: 3rem;
 }
-
+.coinCutter {
+  background-color: #243972;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.coinContainer-Header_list {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.coinContainer-Header_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  color: #858e9d;
+  font-size: 16px;
+  font-weight: 400;
+  height: 42px;
+  width: 120px;
+  margin: 15px;
+  border-radius: 7px;
+}
+.coinContainer-Header_btn:focus {
+  background-color: #f6f6f6;
+  color: #000;
+}
+.coinContainer-Header_btn:hover {
+  background-color: #f6f6f6;
+}
 .coinPage-Info {
   display: flex;
   flex-direction: column;
@@ -108,15 +139,31 @@
   transform: scale(1.1);
   transition: all ease-in-out 0.2s;
 }
-
 .buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
   position: relative;
+  margin-bottom: 30px;
+}
+.buttonContainer input {
+  padding: 8px 12px 8px 12px;
+  direction: rtl;
+  width: 280px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: rgb(150, 143, 143);
+  background-color: #f6f6f6;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .search-icon {
   position: absolute;
   left: 0;
-
   padding: 5px;
   padding-top: 10px;
 }
@@ -156,8 +203,19 @@
     font-size: 14px;
     width: 200px;
   }
+  .coinContainer-Header_btn {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 5px;
+  }
 }
-
+@media only screen and (max-width: 422px) {
+  .coinContainer-Header_btn {
+    font-size: 12px;
+    font-weight: 200;
+    margin: 1px;
+  }
+}
 @media only screen and (max-width: 398px) {
   .coinPage-RouteButton {
     height: 25px;
@@ -179,5 +237,10 @@
   .coinPage-RowHeader {
     font-size: 12px;
     width: 200px;
+  }
+  .coinContainer-Header_btn {
+    font-size: 12px;
+    font-weight: 200;
+    margin: 1px;
   }
 }
