@@ -17,7 +17,7 @@ const Navigation = () => {
         <span className="navbar-logo">
           <i>{<FaAtlassian />}</i>
         </span>
-        <h1 className="navbar-logo">اطلاعات آنلاین فارسی</h1>
+        <h2 className="navbar-logo">اطلاعات آنلاین ارزدیجیتال</h2>
         <div className="menu-icon" onClick={handleClick}>
           <i className={active ? "fas fa-times" : "fas fa-bars"}></i>
         </div>

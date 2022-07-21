@@ -11,7 +11,8 @@
 }
 @media only screen and (max-width: 1033px) {
   .icon-img {
-    height: 250px;
+    width: 100%;
+    height: auto;
   }
 }
 @media only screen and (max-width: 746px) {
@@ -27,8 +28,8 @@
 }
 @media only screen and (max-width: 585px) {
   .icon-img {
-    height: 200px;
-    width: 350px;
+    width: 100%;
+    height: auto;
   }
   .main-txt {
     font-size: 16px;
@@ -39,7 +40,7 @@
 }
 @media only screen and (max-width: 420px) {
   .icon-img {
-    height: 170px;
-    width: 300px;
+    width: 100%;
+    height: auto;
   }
 }

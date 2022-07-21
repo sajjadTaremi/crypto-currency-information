@@ -8,26 +8,26 @@ import { BiPhoneIncoming } from "react-icons/bi";
 const FooterItem = [
   {
     title: "",
-    url: "/",
+    url: "#",
     cName: "footer-link",
     icon: <AiOutlineInstagram />,
   },
 
   {
     title: "",
-    url: "product",
+    url: "#",
     cName: "footer-link",
     icon: <AiOutlineLinkedin />,
   },
   {
     title: "",
-    url: "about",
+    url: "#",
     cName: "footer-link",
     icon: <BiPhoneIncoming />,
   },
   {
     title: "",
-    url: "singup",
+    url: "#",
     cName: "footer-link",
     icon: <AiOutlineWhatsApp />,
   },

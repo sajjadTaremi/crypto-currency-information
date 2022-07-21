@@ -7,7 +7,7 @@ import imgCoinbace from "../../Images/Coinbase-logo.png";
 const Footer = () => (
   <footer className="footer">
     <div className="footer-flex">
-      <h4 className="">اطلاعات آنلاین فارسی</h4>
+      <h4 className="">اطلاعات آنلاین ارزدیجیتال</h4>
       <div className="footer-item">
         <ul className="footer-item">
           {FooterItem.map((item, index) => {
