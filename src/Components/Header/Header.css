@@ -2,7 +2,7 @@
   margin-top: 20px;
 }
 .main,
-.icon {
+.Header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,13 +10,13 @@
   margin: 10px;
 }
 @media only screen and (max-width: 1033px) {
-  .icon-img {
+  .Header-img {
     width: 100%;
     height: auto;
   }
 }
 @media only screen and (max-width: 746px) {
-  .icon-img {
+  .Header-img {
     height: 200px;
   }
   .main-txt {
@@ -27,7 +27,7 @@
   }
 }
 @media only screen and (max-width: 585px) {
-  .icon-img {
+  .Header-img {
     width: 100%;
     height: auto;
   }
@@ -39,7 +39,7 @@
   }
 }
 @media only screen and (max-width: 420px) {
-  .icon-img {
+  .Header-img {
     width: 100%;
     height: auto;
   }
